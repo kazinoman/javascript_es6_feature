@@ -12,3 +12,11 @@ function func() {
   return arguments;
 }
 func("fun");
+
+const function3 = (a, b, ...arg) => {
+  console.log(a);
+  console.log(b);
+  console.log(arg);
+  console.log(arg.map((data) => data + 100));
+};
+function3(1, 2, 3, 34, 54, 5, 6, 7, 8, 9, 9);
